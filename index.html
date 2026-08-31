@@ -77,6 +77,158 @@
         <span>😴</span>
         <div>
           <small>Sono</small>
-          <string id=
-        </div></div>
-      </body>
+          <string id="sonoTotal">--<</strong>
+            <div>
+        </div>
+          </div>
+            <div class="indicador energia">
+              <span>⚡️</span> 
+              <div>
+                <small>Energia percebida</small>
+                <strong id="energiaTotal">--</strong>
+              </div>
+            </div>
+          </section>
+            <!-- REGISTRO DE REFEIÇÃO -->
+            <section class="card">
+              <div class="titulo">
+                <h2>🍽 Registrar refeição</h2>
+                <p>
+                  Registre o que foi consumido e como você se sentiu.
+                </p>
+              </div>
+              <form id="formRefeicao">
+                <input type="hidden" id="refeicaoId">
+                <div class="form-grid">
+                  <div class="campo">
+                    <label>Tipo de Refeição *</label>
+                    <div class="campo">
+                      <label>Horário *</label>
+                      <input
+                        type="time"
+                        id="horario"
+                        required>
+                    </div>
+                    <div class>="campo grande">
+                      <label>Alimentos consumidos *</label>
+                      <input 
+                        type="text"
+                        id="alimentos"
+                        placeholder="Ex.:arroz,feijão, legumes."
+                        required>
+                    </div>
+                    <div class="campo">
+                      <label>Porção / quantidade</label>
+                      <input
+                        type="text"
+                        id="porcao"
+                        placeholder="Ex.:1 prato">
+                    </div>
+                    <div class="campo">
+                      <label>Antes ou depois do treino?</label>
+                      <select id="relacaoTreino">
+                        <option value="Não informado">
+                          Não informado
+                        </option>
+                        <option value="Antes do treino">
+                          Antes do treino
+                        </option>
+                        <select id="tipoRefeicao" required>
+                          <option value="">
+                            Selecione
+                          </option>
+                          <option>
+                            Café da manhã
+                          </option>
+                          <option>
+                            Lanche da manhã 
+                          </option>
+                          <option>
+                            Almoço
+                          </option>
+                          <option>
+                            Lanche da tarde
+                          </option>
+                          <option>
+                            Jantar
+                          </option>
+                          <option>
+                          Lanche noturno
+                          </option>
+                          <option>
+                            Refeição pré-treino
+                          </option>
+                          <option>
+                            Refeição pós-treino
+                          </option>
+                        </select>
+                        <option value="Depois do treino">
+                          Depois do treino
+                        </option>
+                        <option value="Sem relação">
+                          Sem relação
+                        </option>
+                      </select>
+                    </div>
+                    <div class="campo grande">
+                      <label>Observações</label>
+                      <textarea
+                        id="observacoes"
+                        placeholder="Como se sentiu apósa refeição?"></textarea>
+                    </div>
+                  </div>
+                  <div class="botoes">
+                    <button
+                      type="submit"
+                      class="btn btn-primary"
+                      id="btnSalvar">
+                      ➕️ Refgistrar refeição 
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="btnCancelar"
+                      hidden>
+                      Cancelar
+                    </button>
+                  </div>
+              </form>
+            </section>
+            <!-- HIDRATAÇÃO -->
+            <section class="card">
+              <div class="titulo">
+                <h2>💧 Controle de hidratação</h2>
+                <p>
+                  Registre a ingestão de líquido ao longo do dia.
+                </p>
+              </div>
+              <div class="agua contador">
+                <div class="agua-visual">
+                  <span>💧</span>
+                  <strong id>="aguaExibida">
+                    0 ml
+                  </strong>
+                </div>
+              </div>
+              <div class="agua-coes"
+                <button
+                class="btn btn-agua"
+                data-agua="200">
+                + 200 ml
+              </button>
+                <button
+                  class="btn btn-agua"
+                  data-agua="300">
+                  + 300 ml
+                </button>
+                <button
+                  class="btn btn-agua"
+                  data-agua="500">
+                  + 500 ml
+                </button>
+                <button
+                  class="btn btn-secondary"
+                  id="btnZerarAgua">
+                  Zerar
+                </button>
+            </body>
